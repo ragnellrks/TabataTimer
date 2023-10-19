@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/appBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/contText"
+        android:layout_width="268dp"
+        android:layout_height="154dp"
+        android:layout_marginTop="540dp"
+        android:textAlignment="center"
+        android:textColor="#9C27B0"
+        android:textSize="96sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/counterBtn"
+        android:layout_width="78dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="24dp"
+        android:background="#000000"
+        android:foreground="@android:drawable/ic_media_play"
+        android:textColorLink="#050505"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/restTimer" />
+
+    <EditText
+        android:id="@+id/series"
+        android:layout_width="249dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="Series"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/workTimer"
+        android:layout_width="249dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Tiempo de Trabajo"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/series" />
+
+    <EditText
+        android:id="@+id/restTimer"
+        android:layout_width="252dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Tiempo de Descanso"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/workTimer" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="242dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="48dp"
+        android:textAlignment="center"
+        android:textColor="#100101"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/counterBtn" />
+</androidx.constraintlayout.widget.ConstraintLayout>
